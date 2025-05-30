@@ -72,20 +72,6 @@ export default function Home() {
                 height={300}
                 className="rounded-lg shadow-xl w-full h-auto"
               />
-              <Image 
-                src="/Censad6.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-              <Image 
-                src="/censad2.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto col-span-2"
-              />
               
             </div>
             <div className="md:w-1/2 space-y-6">
@@ -104,27 +90,7 @@ export default function Home() {
                   height={300}
                   className="rounded-lg shadow-xl w-full h-auto"
                 />
-                <Image 
-                  src="/images/censad3.jpeg" 
-                  alt="ftb" 
-                  width={500}
-                  height={300}
-                  className="rounded-lg shadow-xl w-full h-auto"
-                />
-                <Image 
-                src="/Censad1.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-              <Image 
-                src="/images/Censad12.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
+                
               </div>
               <h2 className="text-3xl font-bold mb-4">Park Cafe & Restaurant</h2>
               <p className="text-gray-700 mb-6">
