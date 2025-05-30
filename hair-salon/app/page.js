@@ -20,13 +20,13 @@ export default function Home() {
         <section className="relative h-[80vh] bg-[url('/images/park-hero.jpg')] bg-cover bg-center">
           <div className="absolute inset-0 bg-[url(/images/Censad11.jpeg)] bg-opacity-40 flex items-center justify-center">
             <div className="text-center text-green px-4 pb-60">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Cen Sad Park</h1>
-              <p className="text-xl mb-8">Sports, Car wash, Dining, and Relaxation in One Place</p>
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Brows/Lashes</h1>
+              <p className="text-xl mb-8">Training of Ilashladies, a beauty segment under the Puro_Beauty Company </p>
               <button 
                 onClick={() => setShowBookingForm(true)}
                 className="bg-amber-600 hover:bg-green-700 text-green px-6 py-3 rounded-lg text-lg font-semibold transition"
               >
-                Book a Facility
+                Buy Course Here
               </button>
             </div>
           </div>
