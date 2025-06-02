@@ -33,34 +33,7 @@ export default function Home() {
         </section>
 
         {/* Facilities Section - NEW */}
-        <section className="py-16 container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-amber-600">Our Salon Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {FACILITIES.map((facility) => (
-              <Link 
-                key={facility.id} 
-                href={`/facilities/${facility.id}`}
-                className="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition"
-              >
-                <div className="h-48 relative">
-                  <Image
-                    src={facility.image}
-                    alt={facility.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-bold">{facility.title}</h3>
-                  <p className="text-gray-600 mt-2">{facility.description}</p>
-                  <p className="font-semibold text-green-700 mt-2">{facility.price}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
+        
         {/* Cafe Promo */}
         <section className="bg-gray-100 py-16">
           <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
