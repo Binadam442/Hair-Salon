@@ -1,4 +1,4 @@
-import Link from 'next/link';
+ import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaTwitter, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
@@ -13,10 +13,6 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-green-300 transition">Home</Link></li>
-              <li><Link href="/facilities/football" className="hover:text-green-300 transition">Football Pitch</Link></li>
-              <li><Link href="/facilities/basketball" className="hover:text-green-300 transition">Basketball Court</Link></li>
-              <li><Link href="/cafe" className="hover:text-green-300 transition">Cafe & Restaurant</Link></li>
-              <li><Link href="/car-wash" className="hover:text-green-300 transition">Car Wash</Link></li>
             </ul>
           </div>
 
@@ -26,15 +22,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2">
                 <FaMapMarkerAlt />
-                <span>Cen-Sad Park</span>
+                <span>Puro_Beauty</span>
               </li>
               <li className="flex items-center gap-2">
                 <FaPhone />
-                <span>07033152371</span>
+                <span>08106709810</span>
               </li>
               <li className="flex items-center gap-2">
                 <FaEnvelope />
-                <span>censad@gmail.com</span>
+                <span>Puro_Beauty@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -58,7 +54,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-green-800 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Cen-Sad Park. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Puro_Beauty. All rights reserved.</p>
         </div>
       </div>
     </footer>

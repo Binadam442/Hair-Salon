@@ -26,7 +26,7 @@ export default function Home() {
                 onClick={() => setShowBookingForm(true)}
                 className="bg-amber-600 hover:bg-green-700 text-green px-6 py-3 rounded-lg text-lg font-semibold transition"
               >
-                Buy Course Here
+                Register Here
               </button>
             </div>
           </div>
@@ -35,75 +35,52 @@ export default function Home() {
         {/* Facilities Section - NEW */}
         
         {/* Cafe Promo */}
-        <section className="bg-gray-100 py-16">
-          <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/2 grid grid-cols-2 gap-4">
-            <Image 
-                src="/Puro20.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-              <Image 
-                src="/Puro21.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-              <Image 
-                src="/Puro22.jpeg" 
-                alt="Park Cafe" 
-                width={500}
-                height={300}
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-              
-            </div>
-            <div className="md:w-1/2 space-y-6">
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <Image 
-                  src="/Puro23.jpeg" 
-                  alt="Puro_beauty" 
-                  width={500}
-                  height={300}
-                  className="rounded-lg shadow-xl w-full h-auto"
-                />
-                
-              </div>
-               <Image 
-                  src="/Puro.jpeg" 
-                  alt="Puro_beauty" 
-                  width={500}
-                  height={300}
-                  className="rounded-lg shadow-xl w-full h-auto"
-                />
-            </div>
-          </div>
-        </section>
+        <p className="text-xl text-gray-800 leading-8 font-light italic bg-white/80 p-6 rounded-lg shadow-md border border-gray-200">
+  Hello and welcome! My name is <strong className="font-semibold text-gray-900">PECULIAR UWAOMA</strong>, and I’ll be your instructor throughout this exciting training. This is a <em>life-changing course</em>, especially if you're looking to acquire a new skill that can start putting serious money into your pocket.
+  <br /><br />
+  Our online courses are hosted on the <strong>Telegram app</strong>, which is just like WhatsApp. <strong className="text-green-600">Class starts immediately after you register</strong> — no waiting.
+  <br /><br />
+  These are <strong>not live classes</strong>; all videos are already recorded and waiting for you in the class. You’ll have <strong>unlimited access for 3 months</strong> and direct access to ask questions whenever you need help.
+  <br /><br />
+  <span className="text-red-600 font-semibold uppercase">Class starts immediately you register!</span>
+  <br /><br />
+  👉 <strong>Register now via bank transfer</strong> <button 
+                onClick={() => setShowBookingForm(true)}
+                className="bg-amber-500 hover:bg-green-500 text-green px-6 py-3 rounded-lg text-lg font-semibold transition"
+              >
+                Register Here
+              </button>
+  <br /><br />
+  💸 <strong>Course Fees:</strong><br />
+  – Brow Class: ₦2,500<br />
+  – Lashes Class: ₦2,500<br />
+  – Both (Brow + Lashes): ₦5,000
+</p>
+
+
+           
 {/* Testimonials Section with Images */}
 <section className="py-16 container mx-auto px-4">
-  <h2 className="text-3xl font-bold text-center mb-12">Visitor Reviews</h2>
+  <h2 className="text-3xl font-bold text-center mb-12">STUDENTS REVIEWS 👇🏽</h2>
   <div className=" gap-8">
     {[
       { 
         quote: "This class made learning so easy, it is as good as a physical training. No different at all. It's been 1month and I am working on clients. Thank you ma", 
         author: "Mercy",
         image: "/Puro20.jpeg", // Add your image path
-        role: "customer" // Optional role/title
+        role: "Student" // Optional role/title
       },
       { 
         quote: "Who would have thought that your online training would teach me all I needed to know about semi permanent lashes and brows. At first I said to myself, the money is not much, might as well just spend it and see. Today I am so so good at it all. Mama thank you o",
         author: "Blessing",
         image: "/Puro21.jpeg",
-        role: "Regular Customer"
+        role: "Student"
       },
       { 
         quote: "I had big doubt that I would catch since I live far away from your physical shop. Today I am glad I made this bold step. I am now a certified lashes and brows artist. Thank you ma", 
         author: "Root",
         image: "/Puro22.jpeg",
-        role: "customer"
+        role: "Student"
       },
     ].map((item, index) => (
       <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
