@@ -25,12 +25,11 @@ export default function Footer() {
                 <span>Puro_Beauty</span>
               </li>
               <li className="flex items-center gap-2">
-                <FaPhone />
-                <span>08106709810</span>
+                <span></span>
               </li>
               <li className="flex items-center gap-2">
                 <FaEnvelope />
-                <span>Puro_Beauty@gmail.com</span>
+                <span>purofashion.beauty@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -39,14 +38,21 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex gap-4">
-              <Link href="https://facebook.com" aria-label="Facebook">
+              <Link href="https://www.facebook.com/share/1M8a1Re4dL/?mibextid=wwXIfr
+" aria-label="Facebook">
                 <FaFacebook className="text-2xl hover:text-green-300 transition" />
               </Link>
-              <Link href="https://instagram.com" aria-label="Instagram">
+              <Link href="https://www.facebook.com/share/197mbQMfNt/?mibextid=wwXIfr
+" aria-label="Facebook">
+                <FaFacebook className="text-2xl hover:text-green-300 transition" />
+              </Link>
+              <Link href="https://www.instagram.com/ilashladies?igsh=MTg2MjB3YzZrcnRsdQ%3D%3D&utm_source=qr
+" aria-label="Instagram">
                 <FaInstagram className="text-2xl hover:text-green-300 transition" />
               </Link>
-              <Link href="https://twitter.com" aria-label="Twitter">
-                <FaTwitter className="text-2xl hover:text-green-300 transition" />
+              <Link href="https://www.instagram.com/puro_beauty_salon/profilecard/?igsh=MTRwZWJhamY3MWdyaw==
+" aria-label="Instagram">
+                <FaInstagram className="text-2xl hover:text-green-300 transition" />
               </Link>
             </div>
           </div>

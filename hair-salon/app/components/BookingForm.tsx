@@ -1,70 +1,88 @@
 'use client';
 
-import { FaPhone, FaWhatsapp, FaUser, FaEnvelope, FaCalendarAlt } from 'react-icons/fa';
+import { FaPhone, FaWhatsapp, FaMoneyBillWave, FaInfoCircle } from 'react-icons/fa';
 
-type BookingFormProps = {
-  facilityName: string;
-};
+export default function BookingForm() {
+  const paymentDetails = {
+    accountName: "PURO BEAUTY",
+    accountNumber: "5360434792",
+    bankName: "MoniePoint"
+  };
 
-export default function BookingForm({ facilityName }: BookingFormProps) {
-  const phoneNumbers = [
-    { number: "07033152371", name: "Primary Contact" },
-    { number: "08022061658", name: "Secondary Contact" }
-  ];
+  const contactNumber = "07075585589"; // Primary contact only
 
+   
   return (
-    <div className="space-y-6">
-      <h3 className="text-xl font-bold">Book {facilityName}</h3>
-      
-      <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
-        <p className="mb-4">To book {facilityName}, please contact us directly:</p>
-        
-        <div className="space-y-4">
-          {phoneNumbers.map((contact) => (
-            <div key={contact.number} className="bg-white p-4 rounded-lg shadow-sm border">
-              <h4 className="font-medium">{contact.name}</h4>
-              <div className="mt-3 space-y-2">
-                <div className="flex items-center">
-                  <FaPhone className="mr-2 text-blue-500" />
-                  <a 
-                    href={`tel:${contact.number}`}
-                    className="text-blue-600 hover:underline"
-                  >
-                    {contact.number}
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <FaWhatsapp className="mr-2 text-green-500" />
-                  <a
-                    href={`https://wa.me/${contact.number.replace(/\D/g, '')}`}
-                    className="text-green-600 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    WhatsApp
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+    <div className="space-y-4 max-w-md mx-auto p-4">
+      {/* Payment Section */}
+      <div className="bg-purple-50 p-4 rounded-lg">
+        <div className="flex items-center mb-2">
+          <FaMoneyBillWave className="text-purple-600 mr-2" />
+          <h3 className="font-bold">Payment Details</h3>
         </div>
-
-        <p className="mt-4 text-sm text-gray-600">
-          Our staff will assist you with availability and payment details.
-        </p>
+        
+        <div className="grid grid-cols-2 gap-2 text-sm">
+          <span className="font-medium">Account Name:</span>
+          <span>{paymentDetails.accountName}</span>
+          
+          <span className="font-medium">Account No:</span>
+          <span>{paymentDetails.accountNumber}</span>
+          
+          <span className="font-medium">Bank:</span>
+          <span>{paymentDetails.bankName}</span>
+        </div>
       </div>
 
-      <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
-        <h4 className="font-medium mb-2">Booking Information</h4>
-        <p className="text-sm text-gray-700">
-          Please have the following details ready when you call:
-        </p>
-        <ul className="mt-2 text-sm text-gray-700 list-disc list-inside space-y-1">
-          <li>Preferred date and time</li>
-          <li>Duration of booking</li>
-          <li>Number of participants</li>
-          <li>Any special requests</li>
-        </ul>
+      {/* Course Prices */}
+      <div className="bg-blue-50 p-4 rounded-lg">
+        <h3 className="font-bold mb-2">Course Fees</h3>
+        <div className="flex justify-between text-sm">
+          <span>Brow Class:</span>
+          <span className="font-medium">₦3,000</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span>Lash Class:</span>
+          <span className="font-medium">₦3,000</span>
+        </div>
+        <div className="flex justify-between text-sm font-bold text-purple-700">
+          <span>Both Classes:</span>
+          <span>₦6,000</span>
+        </div>
+      </div>
+
+      {/* Contact */}
+      <div className="bg-green-50 p-4 rounded-lg">
+        <div className="flex items-center mb-2">
+          <FaPhone className="text-green-600 mr-2" />
+          <h3 className="font-bold">After Payment</h3>
+        </div>
+        <p className="text-sm mb-2">Send payment receipt to:</p>
+        <div className="flex items-center space-x-3 mb-2">
+          <a 
+            href={`tel:${contactNumber}`}
+            className="flex items-center text-blue-600 text-sm"
+          >
+            <FaPhone className="mr-1" /> Call
+          </a>
+          <a
+            href={`https://wa.me/${contactNumber.replace(/\D/g, '')}`}
+            className="flex items-center text-green-600 text-sm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="mr-1" /> WhatsApp
+          </a>
+        </div>
+        <div className="text-xs bg-yellow-100 text-red-600 p-2 rounded">
+          <FaInfoCircle className="inline mr-1" />
+          <strong>Notice:</strong> Messages without payment receipt will be ignored
+        </div>
+      </div>
+
+      {/* Note */}
+      <div className="flex items-start text-xs text-gray-600">
+        <FaInfoCircle className="mt-0.5 mr-1 flex-shrink-0" />
+        <p>Access granted within 1 hour of payment confirmation. Include your full name when sending proof.</p>
       </div>
     </div>
   );
